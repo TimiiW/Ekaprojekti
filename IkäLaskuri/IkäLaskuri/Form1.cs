@@ -16,5 +16,32 @@ namespace IkäLaskuri
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void laskeBT_Click(object sender, EventArgs e)
+        {
+            DateTime startdate = syntymaDTP.Value;
+            DateTime enddate = DateTime.Now;
+
+            ikkaTB.Text = calcage(startdate, enddate).ToString();
+        }
+
+        public long calcage (System.DateTime startdate,System.DateTime enddate)
+
+        {
+            long age = 0;
+            System.TimeSpan ts = new TimeSpan(startdate.Ticks - enddate.Ticks);
+            age = (long)(ts.Days / 365);
+            return age;
+        }
     }
 }
