@@ -29,19 +29,32 @@ namespace IkäLaskuri
 
         private void laskeBT_Click(object sender, EventArgs e)
         {
-            DateTime startdate = syntymaDTP.Value;
-            DateTime enddate = DateTime.Now;
 
-            ikkaTB.Text = calcage(startdate, enddate).ToString();
         }
 
-        public long calcage (System.DateTime startdate,System.DateTime enddate)
-
+        private void laskeikäbt_Click(object sender, EventArgs e)
         {
-            long age = 0;
-            System.TimeSpan ts = new TimeSpan(startdate.Ticks - enddate.Ticks);
-            age = (long)(ts.Days / 365);
-            return age;
+            DateTime synttari = synttariDTP.Value;
+            DateTime nyt = DateTime.Now;
+            double erotus = Math.Round((nyt - synttari).TotalDays);
+            vuosinalb.Text = Math.Ceiling(erotus / 365.25) + "vuotta";
+            kuukausinalb.Text = Math.Ceiling(erotus * 12 / 365.25) + "Kuukautta";
+            päivinälb.Text = erotus + "päivää";
+            tunteinalb.Text = (erotus * 24) + "tunteina";
+            minuutteinalb.Text = (erotus * 24 * 60) + "minuutteina";
+            sekuntteinalb.Text = (erotus * 24 * 60 * 60) + "sekuntteina";
+            vuosinalb.Visible = true;
+            kuukausinalb.Visible = true;
+            päivinälb.Visible = true;
+            minuutteinalb.Visible = true;
+            sekuntteinalb.Visible = true;
+            tunteinalb.Visible = true;
+
+        }
+
+        private void synttariDTP_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
