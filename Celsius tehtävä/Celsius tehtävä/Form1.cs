@@ -35,7 +35,7 @@ namespace Celsius_tehtävä
             else if (FahrenheitRB.Checked)
             {
                 vastaus = (asteet - 32) / 1.8;
-                VastausLB.Text = asteet + " Celsiusta" +" on " + vastaus + " Fahrenheit astetta";
+                VastausLB.Text = asteet + " Celsiusta" + " on " + vastaus + " Fahrenheit astetta";
                 VastausLB.Visible = true;
             }
             else
