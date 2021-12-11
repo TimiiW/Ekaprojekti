@@ -31,6 +31,7 @@ namespace Opiskelia_kahvila
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ruokalistaform));
             this.vasenPL = new System.Windows.Forms.Panel();
+            this.exitBT = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.koriBT = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -63,7 +64,6 @@ namespace Opiskelia_kahvila
             this.label10 = new System.Windows.Forms.Label();
             this.koriPL = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.exitBT = new System.Windows.Forms.Button();
             this.vasenPL.SuspendLayout();
             this.ylaPL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -93,6 +93,17 @@ namespace Opiskelia_kahvila
             this.vasenPL.Name = "vasenPL";
             this.vasenPL.Size = new System.Drawing.Size(135, 261);
             this.vasenPL.TabIndex = 0;
+            // 
+            // exitBT
+            // 
+            this.exitBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitBT.Image = ((System.Drawing.Image)(resources.GetObject("exitBT.Image")));
+            this.exitBT.Location = new System.Drawing.Point(3, 3);
+            this.exitBT.Name = "exitBT";
+            this.exitBT.Size = new System.Drawing.Size(24, 24);
+            this.exitBT.TabIndex = 9;
+            this.exitBT.UseVisualStyleBackColor = true;
+            this.exitBT.Click += new System.EventHandler(this.exitBT_Click);
             // 
             // panel6
             // 
@@ -252,11 +263,12 @@ namespace Opiskelia_kahvila
             // meistaLB
             // 
             this.meistaLB.AutoSize = true;
+            this.meistaLB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.meistaLB.Location = new System.Drawing.Point(7, 9);
             this.meistaLB.Name = "meistaLB";
-            this.meistaLB.Size = new System.Drawing.Size(63, 25);
+            this.meistaLB.Size = new System.Drawing.Size(461, 147);
             this.meistaLB.TabIndex = 0;
-            this.meistaLB.Text = "label2";
+            this.meistaLB.Text = resources.GetString("meistaLB.Text");
             // 
             // ruoatPL
             // 
@@ -431,28 +443,17 @@ namespace Opiskelia_kahvila
             this.label14.TabIndex = 0;
             this.label14.Text = "Verkkokauppa avautuu myöhemmin";
             // 
-            // exitBT
-            // 
-            this.exitBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitBT.Image = ((System.Drawing.Image)(resources.GetObject("exitBT.Image")));
-            this.exitBT.Location = new System.Drawing.Point(3, 3);
-            this.exitBT.Name = "exitBT";
-            this.exitBT.Size = new System.Drawing.Size(24, 24);
-            this.exitBT.TabIndex = 9;
-            this.exitBT.UseVisualStyleBackColor = true;
-            this.exitBT.Click += new System.EventHandler(this.exitBT_Click);
-            // 
             // Ruokalistaform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
             this.ClientSize = new System.Drawing.Size(634, 261);
+            this.Controls.Add(this.meistaPL);
             this.Controls.Add(this.koriPL);
             this.Controls.Add(this.herkutPL);
             this.Controls.Add(this.juomatPL);
             this.Controls.Add(this.ruoatPL);
-            this.Controls.Add(this.meistaPL);
             this.Controls.Add(this.ylaPL);
             this.Controls.Add(this.vasenPL);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

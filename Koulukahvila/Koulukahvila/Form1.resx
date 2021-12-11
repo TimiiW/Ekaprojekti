@@ -60,11 +60,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="exitBT.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC0SURBVDhPtZTbDYMwDEXzzV6sgNTJGIJZ+GQQBqhaH8uxaOuqWDWWjgTJ9c3LSbsk7p8MwiTM
-        wirsBt+00YfmJc/jrWMUFuHxAzRoPdfj0HgTNiEyiEBLTmjIaBmzDjk6Uw/5YT/OLPMb5A5mp4ZsciTM
-        MJmdGnJykSjDbHZqSDlEogyr2akhNRaJMuxmd41h+ZLLD6W8bMoLG0qvXqf0cegw2pnlo9GZdTyOjcZ/
-        D2xdtPYEdeQ8r5qSwzcAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAALRJREFUOE+1
+        lNsNgzAMRfPNXqyA1MkYgln4ZBAGqFofy7Fo66pYNZaOBMn1zctJuyTunwzCJMzCKuwG37TRh+Ylz+Ot
+        YxQW4fEDNGg91+PQeBM2ITKIQEtOaMhoGbMOOTpTD/lhP84s8xvkDmanhmxyJMwwmZ0acnKRKMNsdmpI
+        OUSiDKvZqSE1Foky7GZ3jWH5kssPpbxsygsbSq9ep/Rx6DDameWj0Zl1PI6Nxn8PbF209gR15DyvmpLD
+        NwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="koriBT.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -199,5 +199,14 @@
         Blg33KNjpo/FoXVUF6iY0WfBuruP4Yyu+w4lTQ7IY5bhn5P+wekYzfoNJU0OwW3L6HRoGFJj3P/jw8t8
         nFB3bQAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="meistaLB.Text" xml:space="preserve">
+    <value>Keudan oppilaskunnan kahvila palvelee luokassa 320  välituntisin
+9:00 - 14:30 joka päivä maanantaista torstaisin ja perjantaisin
+9:00 - 12:30.
+
+Keudan oppilaskunnan kahvilasta saa lämpimmien
+juomien lisäksi virvokkeita sekä pientä purtavaa  ja makeisia
+Tervetuloa tutustumaan!</value>
   </data>
 </root>
